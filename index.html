@@ -9,6 +9,27 @@
     <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
+<!--<button type="button"><a href="testXXX.html" target="_self">test</a></button>-->
+<button type="button"><a href="testXXX.html" target="_self">跳转到</a></button>
+<br>
+<input type="button" id="button1" value="跳转js">
+<br>
+<input name="pclog" type="button" value="GO当前网页刷新" onClick="location.href='testXXX.html'">
+<br>
+<input name="pclog" type="button" value="GO另外的网页" onClick="window.open('testXXX.html')">
+<br>
+<input type="button" value="我是一个按钮" onclick="javascrtpt:window.location.href='testXXX.html'">
+<br>
+<input type="button" value="我是另外一个按钮" onclick="javascrtpt:window.open('testXXX.html')">
+<br>
+<script>
+    function jump()
+    {
+        window.open('testXXX.html');
+    }
+</script>
+<input type="button" value="我是第三个按钮" onclick="javascrtpt:jump()">
+<br>
 <div class="ccc">
     <h1>
         this is my first web
@@ -112,6 +133,29 @@
     <br>
     user password:<br>
     <input type="password" name="paw">
+</form>
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<br>
+<input type="number" name="quantity" min="1" max="5">
+<br>
+<form>
+    select birthday before 1980-1-1<br>
+    <input type="date" name="body" max="1979-12-31">
+    <br>
+    select day after 1999-12-31<br>
+    <input type="date" name="body" min="2000-1-1">
+    <br>
+</form>
+<br>
+<input type="color" name="bestcolor">
+<br>
+<input type="range" name="points" min="0" max="10">
+<br>
+<input type="url" name="pageUrl">
+<input type="submit">
+<br>
+<form>
+    <input type="text" name="text" value="jjjjj" maxlength="10">
 </form>
 </body>
 </html>
