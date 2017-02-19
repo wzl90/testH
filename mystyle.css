@@ -6,5 +6,7 @@
     font-size: 40px;
     text-align:center;
     color:red;
-    float: left;
+    /*float: left;*/
+    /*display: block;*/
+    position: absolute;
 }
