@@ -15,8 +15,6 @@
 <br>
 <button type="button"><a href="testXXX.html" target="_self">跳转到</a></button>
 <br>
-<input type="button" id="button1" value="跳转js">
-<br>
 <input name="pclog" type="button" value="GO当前网页刷新" onClick="location.href='testXXX.html'">
 <br>
 <input name="pclog" type="button" value="GO另外的网页" onClick="window.open('testXXX.html')">
@@ -30,8 +28,14 @@
     {
         window.open('testXXX.html');
     }
+    function testJs()
+    {
+        window.webkit.messageHandlers.showName.postMessage('setAlarm');
+    }
 </script>
 <input type="button" value="我是第三个按钮" onclick="javascrtpt:jump()">
+<br>
+<input type="button" id="button1" value="跳转js" onclick="javascrtpt:testJs()">
 <br>
 <div class="ccc">
     <h1>

@@ -4,9 +4,8 @@
 window.onload = function ()
 {
     var btn = document.getElementById("button1");
-    btn.onclick = function ()
-    {
-        window.open("testXXX.html");
+    btn.onclick = function () {
+        // window.open("testXXX.html");
         // alert("xxxxxx")
     }
 }
