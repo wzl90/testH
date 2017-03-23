@@ -35,7 +35,7 @@
     }
     function testJs()
     {
-        window.webkit.messageHandlers.setAlarm.postMessage('');
+        window.webkit.messageHandlers.setAlarm.postMessage('测试');
 //        alert("jjjjjjj");
     }
 </script>
@@ -43,6 +43,13 @@
 <br>
 <input type="button" value="跳转js" onclick="javascrtpt:testJs()">
 <br>
+<script>
+    function paste() {
+        window.document.execCommand("jianqie");
+    }
+</script>
+<input type="button" value="剪切" onclick="javascrtpt:paste()">
+
 <div class="ccc">
     <h1>
         this is my first web
