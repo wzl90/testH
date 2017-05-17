@@ -35,7 +35,7 @@
     }
     function testJs()
     {
-        window.webkit.messageHandlers.setAlarm.postMessage('chooseCity');
+        window.webkit.messageHandlers.setAlarm.postMessage({"key":"xxxxx","callback":"xxxxx","params":{"id":"xxx","uri":"","body":"注意咯，十点抢购开始","fireDate":1201212,"repeatInterval":0,"event":{"name":"clockName","category":"clockCat","params":{"k1":"v1","k2":"v2"}}}});
 //        alert("jjjjjjj");
     }
 </script>
@@ -46,7 +46,6 @@
 <script>
     function paste() {
         window.document.execCommand("Copy","false",null);
-        alert("jjjjjjjtttt");
     }
 </script>
 <input type="button" value="剪切" onclick="javascrtpt:paste()">
